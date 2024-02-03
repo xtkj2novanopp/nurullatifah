@@ -1,0 +1,55 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Order Custom di Deka Tutorial</title> <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script> <script src="https://dekatutorial.github.io/crd/s.js"></script> <link rel="stylesheet" type="text/css" href="https://dekatutorial.github.io/crd/s.css" /> </head> <body> <?php if(isset($_GET['pesan'])){ echo "<div id='ccp'>"; $fp = fopen('p.txt', 'r'); fgets($fp); while(!feof($fp)){ echo "".fgets($fp); } fclose($fp); echo "</div></body></html>"; die; } ?> <script>dt()</script>
+    <div class="ctnr">
+      <div class="lv">
+        <img src="https://dekatutorial.github.io/crd/lv.svg" />
+        <p>Klik Love-nya</p>
+      </div>
+      <div class="ctn">
+        <button class="btn next">[ Lanjut ]</button>
+        <button class="btn send">[ Kirim Pesan ]</button>
+      </div>
+    </div>
+<script>
+/*=========================
+Mau custom web ucapan online? Order Aja di Deka Tutorial !! (DM untuk order)
++ Youtube: Deka Tutorial
++ Tiktok: @deka_tutorial
++ Instagram: deka_tutorial
+=========================*/
+
+konten = [
+  {
+    gambar: "sticker1.webp",
+    ucapan:"knock, knock",
+  },
+  {
+    gambar: "sticker2.webp",
+    ucapan: "Ada sesuatu yang penting dan spesial nih untuk aunty",
+  },
+  {
+    gambar: "sticker3.webp",
+    ucapan: "Happy Birthday to you, Happy birthday to you~~~",
+  },
+  {
+    gambar: "sticker4.png",
+    ucapan: "selamat bertambah umur, semoga apa yang diingkan segera terwujud dan tercapai ya aunty.",
+  },
+  {
+    gambar: "sticker5.webp",
+    ucapan: "aunty itu, number 1 of the best aunty in the world.",
+  },
+  {
+    gambar: "sticker6.png",
+    ucapan: "terimakasih ya aunty, kaka sayang sama aunty, maaf banget ya baru sempet ngucapin.",
+  },
+  {
+    gambar: "sticker7.png",
+    ucapan: "love you auntyyy >3>",
+  }
+];
+
+musik = "musik.mp3";
+nomorWhatsapp = "628997306622";
+
+/*=========================*/
+</script><script> DekaTutorial(konten, musik, nomorWhatsapp); </script> </body> </html>
